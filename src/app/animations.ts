@@ -8,11 +8,11 @@ const animationTimingMeta = '500ms';
 const layerMargin = 80;
 
 export const animations: {
-    readonly layerRightSlide: AnimationTriggerMetadata;
+    readonly layerSlide: AnimationTriggerMetadata;
     readonly layerRightMove: AnimationTriggerMetadata;
 } = {
-    layerRightSlide:
-        trigger('layerRightSlide', [
+    layerSlide:
+        trigger('layerSlide', [
             transition(':enter', [
                 query('.app-overlay-backdrop', style({opacity: 0})),
                 group([

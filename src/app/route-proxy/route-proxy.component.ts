@@ -9,7 +9,7 @@ import { AppService } from '../app.service';
     styleUrls: ['./route-proxy.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     animations: [
-        animations.layerRightSlide
+        animations.layerSlide
     ]
 })
 export class RouteProxyComponent implements OnInit {
@@ -20,8 +20,8 @@ export class RouteProxyComponent implements OnInit {
         return true;
     }
 
-    @HostBinding('@layerRightSlide')
-    get layerRightSlideAnimation(): boolean {
+    @HostBinding('@layerSlide')
+    get layerSlideAnimation(): boolean {
         return true;
     }
 
